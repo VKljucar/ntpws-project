@@ -121,15 +121,15 @@ header img{
 .main .container .inner{
     margin: 10px 40px 10px 40px;
     background-color: white;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
 }
 
 .main .container .html{
-   border-top: 2px solid #DE4B25;
+   border-top: 3px solid #DE4B25;
 }
 
 .main .container .css{
-    border-top: 2px solid #249CD7;
+    border-top: 3px solid #249CD7;
  }
 
  .main .container .naslov{
