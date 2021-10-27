@@ -71,6 +71,8 @@ header img{
     text-align: center;
     font-weight: bold;
     font-size: 11px;
+    position: absolute;
+    bottom: 0;
  }
 
 .footer a{
@@ -88,7 +90,7 @@ header img{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -128,8 +130,18 @@ header img{
     margin: 10px 20px 10px 20px;
     background-color: white;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
-    display: flex;
-    flex-direction: row;
+}
+
+.main .container .inner form{
+    float: left;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.main .container .inner iframe{
+    float: left;
+    width: 50%;
+    margin-left: 10px;
 }
 
 .main .container .news{
@@ -140,3 +152,32 @@ header img{
     border-bottom: 1px solid rgb(0 0 0 / 10%);
     background-color: white;
  }
+
+
+ input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 70%;
+    background-color: white;
+    color: #DE4B25;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #DE4B25;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #DE4B25;
+    color: white;
+  }
+  
+ 
