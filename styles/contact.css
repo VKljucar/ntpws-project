@@ -166,8 +166,8 @@ header img{
   
   input[type=submit] {
     width: 70%;
-    background-color: white;
-    color: #DE4B25;
+    background-color: #DE4B25;
+    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: 1px solid #DE4B25;
@@ -176,8 +176,8 @@ header img{
   }
   
   input[type=submit]:hover {
-    background-color: #DE4B25;
-    color: white;
+    background-color: white;
+    color: #DE4B25;
   }
   
  
