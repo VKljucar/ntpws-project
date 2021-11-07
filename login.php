@@ -40,7 +40,7 @@ print'
                 </div>
             </div>
             <div class="col text-center" style="text-align: center;position: relative;bottom: 180px;">
-                <a class="register" href="register.php" style="font-size: 11px; text-decoration: none;"><h2 class="display-3" >Register</h2></a>
+                <a class="register" href="index.php?menu=7" style="font-size: 11px; text-decoration: none;"><h2 class="display-3" >Register</h2></a>
             </div>
         </div>';
 ?>

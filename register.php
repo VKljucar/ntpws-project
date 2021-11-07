@@ -1,30 +1,6 @@
-<?php
-    error_reporting(0);
-    define('__APP__', TRUE);
-    
-    include ("dbcon.php");
-    include ("user_register.php");
-?>
-<!DOCTYPE html>
-<html>
+<?php include ("user_register.php"); 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Projekt Napredne tehnike projektiranja web servisa (open source, php)">
-    <meta name="keywords" content="HTML, CSS, PHP, JavaScript">
-    <meta name="author" content="Valentino Ključar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles/register.css">
-    <title>Home</title>
-</head>
-
-<body>
-    <header>
-        <img src="./img/logo.png" alt="header">
-    </header>
-    <?php include 'menu.php';?>
-    <div class="main">
+    print'
         <div class="h-100">
             <div class="container" style="margin-top:20px">
                 <div class="row justify-content-center pt-5">
@@ -61,25 +37,23 @@
                                             placeholder="password" required type="password">
                                     </div>
                                     <div class="form-label-group">
-                                    <select id="country" name="country">
-                                        <?php
+                                    <select id="country" name="country">';
                                             $query = "SELECT * FROM country";
                                             $result = @mysqli_query($MySQL, $query);
                                             while($row = @mysqli_fetch_array($result)) {
                                                 print '<option value="' . $row['country_id'] . '">' . $row['name'] . '</option>';
                                             }
-                                        ?>  
+                                    print '
                                     </select>
                                     </div>
                                     <div class="form-label-group">
-                                    <select id="user" name="user">
-                                        <?php
+                                    <select id="user" name="user">';
                                             $query = "SELECT * FROM user_type";
                                             $result = @mysqli_query($MySQL, $query);
                                             while($row = @mysqli_fetch_array($result)) {
                                                 print '<option value="' . $row['user_type_id'] . '">' . $row['user_type_name'] . '</option>';
                                             }
-                                        ?>  
+                                    print '
                                     </select>
                                     </div>
                                     <div class="alert alert-danger mt-2" *ngIf="loginFailed" style="display: none;">
@@ -96,13 +70,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>TVZ-2021 VKljucar <a href="https://github.com/VKljucar/ntpws-project"><i class="fa fa-github"></i></a></p>
-    </div>
-
-
-</body>
-
-</html>
+        </div>';
+        ?>
+  

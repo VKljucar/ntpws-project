@@ -27,6 +27,7 @@ print '
         else if ($menu == 4) { print'about.css';}
         else if ($menu == 5) { print'gallery.css';}
         else if ($menu == 6) { print'login.css';}
+        else if ($menu == 7) { print'register.css';}
     print '">
     <title>Home</title>
 </head>
@@ -48,6 +49,7 @@ print '
         else if ($menu == 4) { include("about.php"); }
         else if ($menu == 5) { include("gallery.php"); }
         else if ($menu == 6) { include("login.php"); }
+        else if ($menu == 7) { include("register.php"); }
 print'
 </div>
 <div class="footer">
