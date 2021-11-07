@@ -1,33 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Projekt Napredne tehnike projektiranja web servisa (open source, php)">
-    <meta name="keywords" content="HTML, CSS, pHp, JavaScript">
-    <meta name="author" content="Valentino Ključar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles/gallery.css">
-    <title>Gallery</title>
-</head>
-
-<body>
-
-    <header>
-        <img src="./img/logo.png" alt="header">
-    </header>
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="galerry.html">Gallery</a></li>
-            <li style="float: right; margin-right: 40px;"><a href="login.html">Login</a></li>
-        </ul>
-    </div>
-    <div class="main">
+<?php
+print'
         <div class="container">
             <div class="inner">
                 <img id="Img1" src="./img/news1.jpg" alt="html" onClick="Modal(this.id)">
@@ -58,7 +30,7 @@
             <div class="inner">
                 <img id="Img4" src="./img/news4.jpg" alt="html" onClick="Modal(this.id)">
                 <h5>
-                    (CNN)Fossils trapped in amber have been among paleontology's most fascinating finds in recent years.
+                    (CNN)Fossils trapped in amber have been among paleontologys most fascinating finds in recent years.
                 </h5>
             </div>
         </div>
@@ -66,7 +38,7 @@
             <div class="inner">
                 <img id="Img5" src="./img/news5.jpg" alt="html" onClick="Modal(this.id)">
                 <h5>
-                    Miss France, the country's 101-year-old beauty pageant, is being sued by a feminist activist group and three unsuccessful applicants over alleged discriminatory entry requirements.
+                    Miss France, the countrys 101-year-old beauty pageant, is being sued by a feminist activist group and three unsuccessful applicants over alleged discriminatory entry requirements.
                 </h5>
             </div>
         </div>
@@ -111,18 +83,13 @@
                 </h5>
             </div>
         </div>
-
-    </div>
     <div id="myModal" class="modal">
         <img class="modal-content" id="img01">
-      </div>
-    <div class="footer">
-        <p>TVZ-2021 VKljucar <a href="https://github.com/VKljucar/ntpws-project"><i class="fa fa-github"></i></a></p>
     </div>
 
     <script>
         // Get the modal
-        var modal = document.getElementById('myModal');
+        var modal = document.getElementById("myModal");
         
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var modalImg = document.getElementById("img01");
@@ -147,9 +114,5 @@
             
          }    
             
-        </script>
-
-
-</body>
-
-</html>
+        </script>';
+?>

@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Projekt Napredne tehnike projektiranja web servisa (open source, php)">
-    <meta name="keywords" content="HTML, CSS, PHP, JavaScript">
-    <meta name="author" content="Valentino Ključar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <title>Home</title>
-</head>
-<body>
-
-<header>
-    <img src="./img/logo.png" alt="header">
-</header>
-<div class="nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="galerry.html">Gallery</a></li>
-        <li style="float: right; margin-right: 40px;"><a href="login.html">Login</a></li>
-      </ul>
-</div>
-<div class="main">
+<?php
+print '
     <div class="container">
         <div class="news">
             <div class="naslov">
@@ -50,12 +24,5 @@
                   </div>                  
              </div>
         </div>
-    </div>
-</div>
-<div class="footer">
-    <p>TVZ-2021 VKljucar <a href="https://github.com/VKljucar/ntpws-project"><i class="fa fa-github"></i></a></p>
-</div>
-  
-
-</body>
-</html>
+    </div>';
+?>

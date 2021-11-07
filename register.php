@@ -1,3 +1,10 @@
+<?php
+    error_reporting(0);
+    define('__APP__', TRUE);
+    
+    include ("dbcon.php");
+    include ("user_register.php");
+?>
 <!DOCTYPE html>
 <html>
 
@@ -16,29 +23,21 @@
     <header>
         <img src="./img/logo.png" alt="header">
     </header>
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="galerry.html">Gallery</a></li>
-            <li style="float: right; margin-right: 40px;"><a href="login.html">Login</a></li>
-        </ul>
-    </div>
+    <?php include 'menu.php';?>
     <div class="main">
         <div class="h-100">
-            <div class="container">
+            <div class="container" style="margin-top:20px">
                 <div class="row justify-content-center pt-5">
                     <div class="col text-center">
-                        <h2 class="display-3">Register</h2>
+                        <h2 class="display-3" style="padding: 10px 10px 10px 40px">Register</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-10 col-lg-6 h-100">
                         <div class="card mt-5">
                             <div class="card-body">
-                                <form #authenticationForm="ngForm" class="form-signin" name="authenticationForm">
+                                <form #authenticationForm="ngForm" class="form-signin" name="authenticationForm" method="POST">
+                                    <input type="hidden" id="_action_" name="_action_" value="TRUE">
                                     <div class="text-center mb-4">
                                     </div>
                                     <div class="form-label-group mb-3">
@@ -63,15 +62,31 @@
                                     </div>
                                     <div class="form-label-group">
                                     <select id="country" name="country">
-                                        <option value="2">User</option>
-                                        <option value="1">Admin</option>
+                                        <?php
+                                            $query = "SELECT * FROM country";
+                                            $result = @mysqli_query($MySQL, $query);
+                                            while($row = @mysqli_fetch_array($result)) {
+                                                print '<option value="' . $row['country_id'] . '">' . $row['name'] . '</option>';
+                                            }
+                                        ?>  
+                                    </select>
+                                    </div>
+                                    <div class="form-label-group">
+                                    <select id="user" name="user">
+                                        <?php
+                                            $query = "SELECT * FROM user_type";
+                                            $result = @mysqli_query($MySQL, $query);
+                                            while($row = @mysqli_fetch_array($result)) {
+                                                print '<option value="' . $row['user_type_id'] . '">' . $row['user_type_name'] . '</option>';
+                                            }
+                                        ?>  
                                     </select>
                                     </div>
                                     <div class="alert alert-danger mt-2" *ngIf="loginFailed" style="display: none;">
                                         Pogrešno ime ili lozinka
                                     </div>
-                                    <button (click)="login()" class="btn btn-lg btn-primary btn-block mt-3 signin"
-                                        type="submit">Register
+                                    <button class="btn btn-lg btn-primary btn-block mt-3 signin"
+                                        type="submit" name="submit" value="Submit">Register
                                         <span class="spinner-border spinner-border-sm" role="status"
                                             aria-hidden="true"></span>
                                     </button>

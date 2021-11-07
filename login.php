@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Projekt Napredne tehnike projektiranja web servisa (open source, php)">
-    <meta name="keywords" content="HTML, CSS, PHP, JavaScript">
-    <meta name="author" content="Valentino Ključar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles/login.css">
-    <title>Home</title>
-</head>
-
-<body>
-    <header>
-        <img src="./img/logo.png" alt="header">
-    </header>
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="galerry.html">Gallery</a></li>
-            <li style="float: right; margin-right: 40px;"><a href="login.html">Login</a></li>
-        </ul>
-    </div>
-    <div class="main">
+<?php include ("user_login.php"); ?>
+<?php
+print'
         <div class="h-100">
             <div class="container">
                 <div class="row justify-content-center pt-5">
@@ -38,7 +12,8 @@
                     <div class="col-sm-12 col-md-10 col-lg-6 h-100">
                         <div class="card mt-5">
                             <div class="card-body">
-                                <form #authenticationForm="ngForm" class="form-signin" name="authenticationForm">
+                                <form #authenticationForm="ngForm" class="form-signin" name="authenticationForm" method="POST">
+                                <input type="hidden" id="_action_" name="_action_" value="TRUE">
                                     <div class="text-center mb-4">
                                     </div>
                                     <div class="form-label-group mb-3">
@@ -52,8 +27,8 @@
                                     <div class="alert alert-danger mt-2" *ngIf="loginFailed" style="display: none;">
                                         Pogrešno ime ili lozinka
                                     </div>
-                                    <button (click)="login()" class="btn btn-lg btn-primary btn-block mt-3 signin"
-                                        type="submit">login
+                                    <button class="btn btn-lg btn-primary btn-block mt-3 signin"
+                                        type="submit" name="submit" value="Submit">login
                                         <span class="spinner-border spinner-border-sm" role="status"
                                             aria-hidden="true"></span>
                                     </button>
@@ -65,15 +40,8 @@
                 </div>
             </div>
             <div class="col text-center" style="text-align: center;position: relative;bottom: 180px;">
-                <a class="register" href="register.html" style="font-size: 11px; text-decoration: none;"><h2 class="display-3" >Register</h2></a>
+                <a class="register" href="register.php" style="font-size: 11px; text-decoration: none;"><h2 class="display-3" >Register</h2></a>
             </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>TVZ-2021 VKljucar <a href="https://github.com/VKljucar/ntpws-project"><i class="fa fa-github"></i></a></p>
-    </div>
-
-
-</body>
-
-</html>
+        </div>';
+?>
+    

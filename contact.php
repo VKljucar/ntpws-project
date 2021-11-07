@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Projekt Napredne tehnike projektiranja web servisa (open source, php)">
-    <meta name="keywords" content="HTML, CSS, PHP, JavaScript">
-    <meta name="author" content="Valentino Ključar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles/contact.css">
-    <title>Home</title>
-</head>
-<body>
-
-<header>
-    <img src="./img/logo.png" alt="header">
-</header>
-<div class="nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="galerry.html">Gallery</a></li>
-        <li style="float: right; margin-right: 40px;"><a href="login.html">Login</a></li>
-      </ul>
-</div>
-<div class="main">
+<?php
+print '
     <div class="container">
         <div class="news">
             <div class="naslov">
@@ -57,12 +31,5 @@
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.7904519056715!2d15.966801615568512!3d45.79542567910617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d68b5d094979%3A0xda8bfa8459b67560!2sVrbik%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1635368038207!5m2!1shr!2shr" style="width: 50%;height:520px;"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
             </div>
         </div>
-    </div>
-</div>
-<div class="footer">
-    <p>TVZ-2021 VKljucar <a href="https://github.com/VKljucar/ntpws-project"><i class="fa fa-github"></i></a></p>
-</div>
-  
-
-</body>
-</html>
+    </div>';
+?>

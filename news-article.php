@@ -18,16 +18,7 @@
     <header>
         <img src="./img/logo.png" alt="header">
     </header>
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="galerry.html">Gallery</a></li>
-            <li style="float: right; margin-right: 40px;"><a href="login.html">Login</a></li>
-        </ul>
-    </div>
+    <?php include 'menu.php';?>
     <div class="main">
         <div class="w3-container">
             <div class="gallery">
