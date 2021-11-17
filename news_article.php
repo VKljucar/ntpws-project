@@ -24,7 +24,7 @@
                         ' . $row['article'] . '
                     </p>
                     <div class="izvor">
-                        <p>Izvor: <a href="https://' . $row['source'] . '">bbc.com</a></p>
+                        <p>Izvor: <a href="' . $row['source'] . '">' . $row['source'] . '</a></p>
                     </div>
                 </div>
             </div>
