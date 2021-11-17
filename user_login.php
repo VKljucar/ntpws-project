@@ -19,6 +19,7 @@ function login(){
         $_SESSION['user']['id'] = $row['id'];
         $_SESSION['user']['firstname'] = $row['firstname'];
         $_SESSION['user']['lastname'] = $row['lastname'];
+        $_SESSION['user']['user_type'] = $row['user_type_id'];
         $_SESSION['message'] = '<p>Dobrodošli, ' . $_SESSION['user']['firstname'] . ' ' . $_SESSION['user']['lastname'] . '</p>';
         header( "refresh:0;url=index.php" );
 

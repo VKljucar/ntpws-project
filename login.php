@@ -24,9 +24,6 @@ print'
                                         <input autocomplete="current-password" class="form-control pwd" name="password"
                                             placeholder="password" required type="password">
                                     </div>
-                                    <div class="alert alert-danger mt-2" *ngIf="loginFailed" style="display: none;">
-                                        Pogrešno ime ili lozinka
-                                    </div>
                                     <button class="btn btn-lg btn-primary btn-block mt-3 signin"
                                         type="submit" name="submit" value="Submit">login
                                         <span class="spinner-border spinner-border-sm" role="status"

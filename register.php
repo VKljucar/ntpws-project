@@ -12,7 +12,7 @@
                     <div class="col-sm-12 col-md-10 col-lg-6 h-100">
                         <div class="card mt-5">
                             <div class="card-body">
-                                <form #authenticationForm="ngForm" class="form-signin" name="authenticationForm" method="POST">
+                                <form class="form-signin" name="authenticationForm" method="POST">
                                     <input type="hidden" id="_action_" name="_action_" value="TRUE">
                                     <div class="text-center mb-4">
                                     </div>
@@ -55,9 +55,6 @@
                                             }
                                     print '
                                     </select>
-                                    </div>
-                                    <div class="alert alert-danger mt-2" *ngIf="loginFailed" style="display: none;">
-                                        Pogrešno ime ili lozinka
                                     </div>
                                     <button class="btn btn-lg btn-primary btn-block mt-3 signin"
                                         type="submit" name="submit" value="Submit">Register

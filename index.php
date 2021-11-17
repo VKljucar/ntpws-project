@@ -28,6 +28,8 @@ print '
         else if ($menu == 5) { print'gallery.css';}
         else if ($menu == 6) { print'login.css';}
         else if ($menu == 7) { print'register.css';}
+        else if ($menu == 8) { print'add_news.css';}
+        else if ($menu == 9) { print'news_article.css';}
     print '">
     <title>Home</title>
 </head>
@@ -50,6 +52,8 @@ print '
         else if ($menu == 5) { include("gallery.php"); }
         else if ($menu == 6) { include("login.php"); }
         else if ($menu == 7) { include("register.php"); }
+        else if ($menu == 8) { include("add_news.php"); }
+        else if ($menu == 9) { include("news_article.php"); }
 print'
 </div>
 <div class="footer">
