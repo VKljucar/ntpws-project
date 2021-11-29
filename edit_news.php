@@ -9,9 +9,10 @@ print '
     <div class="container" style="zoom:0.87">
         <div class="news">
             <div class="naslov">
+                <a href="edit_them_news.php?delete=D&news_id='. $id .'"" style="float:right;padding:10px 10px 0px 0px"><i class="fa fa-trash" style="font-size:24px"></i></a>
                 <h3>EDIT NEWS</h3>
             </div>
-                <form method="POST" id="usrform" enctype="multipart/form-data" action="edit_them_news.php?news_id='. $id .'"><br>
+                <form method="POST" id="usrform" enctype="multipart/form-data" action="edit_them_news.php?news_id='. $id .'&delete=N"><br>
                     <label for="title">Title</label><br>
                     <input type="text" id="title" name="title" placeholder="Title.." required value="' . $row['title'] . '">
                     <br><br>
@@ -33,5 +34,6 @@ print '
     </div>';
 
     }
+
 
 ?>
