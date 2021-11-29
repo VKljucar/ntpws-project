@@ -71,7 +71,7 @@ header img{
     text-align: center;
     font-weight: bold;
     font-size: 11px;
-    position: absolute;
+    position: relative;
     bottom: 0;
  }
 
@@ -180,4 +180,5 @@ header img{
     color: #DE4B25;
   }
   
+  /*test*/
  

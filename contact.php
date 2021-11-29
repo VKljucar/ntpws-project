@@ -19,6 +19,12 @@ print '
                     <label for="adresa">Adresa</label><br>
                     <input type="text" id="adresa" name="adresa" placeholder="Adresa..">
                     <br><br>
+                    <label for="subject">Razlog</label><br>
+                    <input type="text" id="subject" name="subject" placeholder="razlog..">
+                    <br><br>
+                    <label for="sadrzaj">Tekst</label><br>
+                    <input type="text" id="sadrzaj" name="sadrzaj" placeholder="tekst..">
+                    <br><br>
                     <label for="country">Country</label><br>
                     <select id="country" name="country">
                       <option value="hrv">Hrvatska</option>
