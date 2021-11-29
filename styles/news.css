@@ -110,6 +110,7 @@ header img{
 .main .container img{
     min-width: 350px;
     width: 20%;
+    height: 200px;
 }
 
 .main .container img:hover{

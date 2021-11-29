@@ -12,7 +12,7 @@ print'
                     <div class="col-sm-12 col-md-10 col-lg-6 h-100">
                         <div class="card mt-5">
                             <div class="card-body">
-                                <form #authenticationForm="ngForm" class="form-signin" name="authenticationForm" method="POST">
+                                <form class="form-signin" name="authenticationForm" method="POST">
                                 <input type="hidden" id="_action_" name="_action_" value="TRUE">
                                     <div class="text-center mb-4">
                                     </div>
@@ -30,7 +30,6 @@ print'
                                             aria-hidden="true"></span>
                                     </button>
                                 </form>
-                                
                             </div>
                         </div>
                     </div>
