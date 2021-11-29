@@ -3,6 +3,8 @@ body{
     padding: 0;
     font-family: Arial;
     background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -69,8 +71,10 @@ header img{
     text-align: center;
     font-weight: bold;
     font-size: 11px;
-    position: absolute;
+    position: relative;
     bottom: 0;
+    top: 100%;
+    transform: translateY(100%);
  }
 
 .footer a{
@@ -88,17 +92,21 @@ header img{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .main > .container{
     text-align: justify;
-    width: 25%;
+    width: 80%;
     border: 1px solid #E7E7E7;
-    margin: 10px 40px;
+    margin: 10px 30px;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
     background-color: #F9F9F9;
     zoom: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main .container p{
@@ -107,33 +115,77 @@ header img{
 }
 
 .main .container img{
+    min-width: 350px;
     width: 100%;
-    height: 270px;
 }
 
-.main .container h1{
-    text-align: center;
-    width: 100%;
+.main .container img:hover{
+    cursor: pointer;
+}
+
+.main .container h3{
+    text-align: left;
     padding: 10px 0px 10px 0px;
     margin: 0;
     background-color: white;
-    font-size: 24px;
+    margin-left: 2%;
 }
 
 .main .container .inner{
-    margin: 10px 40px 10px 40px;
+    margin: 10px 20px 10px 20px;
     background-color: white;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
 }
 
-.main .container .html{
-   border-top: 3px solid #DE4B25;
+.main .container .inner form{
+    float: left;
+    width: 100%;
+    margin-left: 10px;
 }
 
-.main .container .css{
-    border-top: 3px solid #249CD7;
- }
+.main .container .news{
+   border-top: 3px solid #DE4B25;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
 
  .main .container .naslov{
     border-bottom: 1px solid rgb(0 0 0 / 10%);
+    background-color: white;
+    width: 100%;
+ }
+
+
+ input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 40%;
+    background-color: #DE4B25;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 30%;
+    border: 1px solid #DE4B25;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: white;
+    color: #DE4B25;
+  }
+  
+ #usrform{
+     width: 70%;
  }

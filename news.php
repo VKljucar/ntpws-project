@@ -4,7 +4,11 @@
     while($row = @mysqli_fetch_array($result)) {
         print'<div class="container">
                 <div class="news">
-                    <div class="naslov">
+                    <div class="naslov">';
+                    if ($_SESSION['user']['valid'] == 'true' && $_SESSION['user']['user_type'] != 2) {
+                        print'<a href="index.php?menu=10&news_id='.$row['news_id'].'" style="float:right;padding:10px 10px 0px 0px"><i class="fa fa-edit" style="font-size:24px"></i></a>';
+                    }
+                    print'
                         <h3>' . $row['title'] . '</h3>
                     </div>
                     <div class="inner">

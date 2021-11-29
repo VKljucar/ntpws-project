@@ -158,7 +158,7 @@ header img{
 
 
  input[type=text], select, textarea {
-    width: 90%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
