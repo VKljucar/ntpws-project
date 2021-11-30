@@ -17,6 +17,9 @@ print '
             print'<li style="float: right; margin-right: 40px;"><a href="user_logout.php">Log out</a></li>
             <li style="float: right; margin-right: 40px;"><a class="user"  style="cursor:default;">'.$_SESSION['user']['firstname'].'</a></li>';
         }
+        if ($_SESSION['user']['valid'] == 'true' && $_SESSION['user']['user_type'] != 2 && $_SESSION['user']['user_type'] != 3) {
+            print'<li style="float: right; margin-right: 40px;"><a href="index.php?menu=11">Edit users</a></li>';
+        }
         
     print'
     </ul>
