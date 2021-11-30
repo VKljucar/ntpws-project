@@ -190,9 +190,9 @@ header img{
     text-align: center;
     font-weight: bold;
     font-size: 11px;
-    position: absolute;
+    position: relative;
     bottom: 0;
-    margin-top: 100px;
+    margin-bottom: -11px;
  }
 
 .footer a{
