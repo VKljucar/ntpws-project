@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
 
 function sendMail(){
 
-        $to = "kljukster3@gmail.com"; // this is your Email address
+        $to = "test@gmail.com"; // this is your Email address
         $from = $_POST['email']; // this is the sender's Email address
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];

@@ -32,6 +32,7 @@ print '
         else if ($menu == 9) { print'news_article.css';}
         else if ($menu == 10) { print'edit_news.css';}
         else if ($menu == 11) { print'edit_users.css';}
+        else{print'styles.css';}
     print '">
     <title>Home</title>
 </head>
@@ -58,6 +59,7 @@ print '
         else if ($menu == 9) { include("news_article.php"); }
         else if ($menu == 10) { include("edit_news.php"); }
         else if ($menu == 11) { include("edit_users.php"); }
+        else if ($menu == 12) { include("api_con.php"); }
 print'
 </div>
 <div class="footer">
