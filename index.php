@@ -32,14 +32,14 @@ print '
         else if ($menu == 9) { print'news_article.css';}
         else if ($menu == 10) { print'edit_news.css';}
         else if ($menu == 11) { print'edit_users.css';}
-        else{print'styles.css';}
+        else if ($menu == 12) { print'spicy.css';}
     print '">
     <title>Home</title>
 </head>
 <body>
 
 <header>
-    <img src="./img/logo.png" alt="header">
+    <img src="./img/logo1.png" alt="header">
 </header>';
      include("menu.php");
      print '

@@ -8,7 +8,7 @@ print '
         <li><a href="index.php?menu=3">Contact</a></li>
         <li><a href="index.php?menu=4">About</a></li>
         <li><a href="index.php?menu=5">Gallery</a></li>
-        <li><a href="index.php?menu=12">API</a></li>';
+        <li><a href="index.php?menu=12">Spicy</a></li>';
         if ($_SESSION['user']['valid'] == 'true' && $_SESSION['user']['user_type'] != 2) {
             print'<li><a href="index.php?menu=8">Add news</a></li>';
         }
